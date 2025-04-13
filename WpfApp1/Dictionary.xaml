@@ -1,0 +1,54 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Button">
+        <Setter Property="Height" Value="38"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="Margin" Value="16"/>
+        <Setter Property="FontFamily" Value="Tw Cen MT"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="#FF37474F"/>
+        <Setter Property="Background" Value="#FFFF9C1A"/>
+    </Style>
+    <Style TargetType="Frame">
+        <Setter Property="Background" Value="#FFFF"/>
+    </Style>
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Tw Cen MT"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="#FF37474F"/>
+    </Style>
+
+    <Style TargetType="DataGrid">
+        <Setter Property="FontFamily" Value="Tw Cen MT"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="#FF37474F"/>
+    </Style>
+
+    <Style x:Key="TextBlock" TargetType="TextBlock">
+        <Setter Property="Height" Value="38"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="Margin" Value="16"/>
+        <Setter Property="FontFamily" Value="Tw Cen MT"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="#FF37474F"/>
+    </Style>
+
+    <Style x:Key="TextBoxx" TargetType="TextBox">
+        <Setter Property="Height" Value="38"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="Margin" Value="16"/>
+        <Setter Property="FontFamily" Value="Tw Cen MT"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="#FF37474F"/>
+    </Style>
+
+    <Style TargetType="Label">
+
+    </Style>
+    <Style TargetType="TextBox">
+        <Setter Property="Height" Value="38"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="Margin" Value="16"/>
+    </Style>
+
+</ResourceDictionary>

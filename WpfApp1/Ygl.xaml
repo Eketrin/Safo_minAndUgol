@@ -1,0 +1,45 @@
+﻿<Page x:Class="WpfApp1.Ygl"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Метод северо-западного угла">
+
+    <Grid>
+        <TabControl>
+            <TabItem Header="Ввод данных (СЗ угол)">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Предложения (s):" Width="130" Style="{StaticResource TextBlock}"/>
+                        <TextBox Name="SupplyTextBox" Width="300"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Потребности (d):" Width="130" Style="{StaticResource TextBlock}"/>
+                        <TextBox Name="DemandTextBox" Width="300"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Стоимость (C):" Width="130" Style="{StaticResource TextBlock}"/>
+                        <TextBox Name="CostTextBox" Width="597"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Построить опорный план" Click="OnBuildPlanClicked" Width="200" />
+                        <Button Content="Очистить матрицу стоимостей" Click="ClearCostMatrix_Click" Width="250" />
+                    </StackPanel>
+                    <TextBox TextWrapping="Wrap" Style="{StaticResource TextBoxx}" IsReadOnly="True" Text="Пример ввода данных: s: 350, 200, 300   d: 170, 140, 200, 195, 145 С: 22, 14, 16, 28, 30; 19, 17, 26, 36, 36; 37, 30, 31, 39, 41" Height="68" />
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Результаты">
+                <StackPanel>
+                   
+                    <DataGrid Name="ResultDataGrid" Width="760" Height="300"/>
+
+                    <TextBlock Style="{StaticResource TextBlock}" Name="CostTextBlock"  />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>
